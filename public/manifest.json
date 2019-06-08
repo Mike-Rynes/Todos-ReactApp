@@ -1,0 +1,20 @@
+{
+  "short_name": "My Todos",
+  "name": "Sunshine Removals Todos",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "static/media/applogo.51b74ca3.png",
+      "sizes": "512x512",
+      "type" : "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#fd5f00",
+  "background_color": "#d18b00"
+}

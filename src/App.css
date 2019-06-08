@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 0rem;
+}
+
+.btn {
+  display: inline-block;
+  /* border: none; */
+  background: #555;
+  color: #fff;
+  padding: 14px 12px !important;
+  cursor: pointer;
+  border-radius: 2px !important;
+}
+
+.btn:hover {
+  background: #666;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img {
+  display: flex;
+  width: 150px;
+  margin: 0 auto;
+}

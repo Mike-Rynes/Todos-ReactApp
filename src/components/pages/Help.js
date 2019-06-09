@@ -6,8 +6,10 @@ function Help() {
         <div>
             <React.Fragment>
             <h2 style={h2tStyle}>Services To Help Your Removals.</h2>
-            <p style={pStyle} ><strong>This section is ideal for the busy and the incapacitated. We look for proffessional services that complement moving locations.</strong></p>
-            <Viccleaners/>
+            <p style={pStyle}><strong>This section is ideal for the busy and the incapacitated. We look for proffessional services that complement moving locations.</strong></p>
+            <div  style={divlearnersStyle}>
+              <Viccleaners/>
+            </div>
             </React.Fragment>
             <Footer/>
         </div>
@@ -15,14 +17,16 @@ function Help() {
 }
 
 const h2tStyle = {
-    margin: '30px 10px 0 20px',
+    margin: '30px 20px',
     color: '#d18b00',
 }
 
 const pStyle = {
-    marginTop: '20px',
-    marginLeft: '20px',
-    marginRight: '20px',
+    margin: '20px 20px',
+}
+
+const divlearnersStyle = {
+    margin: '30px 0 40px',
 }
 
 export default Help;

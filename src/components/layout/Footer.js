@@ -25,13 +25,14 @@ const footerStyle = {
     background: 'rgb(81, 81, 81)',
     color: '#fff',
     // marginTop: '30px',
-    padding: '20px 20px',
+    padding: '30px 20px',
   }
   const ulfooterStyle = {
+    listStyleType: 'none',
     background: 'rgb(63, 63, 63)',
     color: '#fff',
-    marginTop: '10px',
-    padding: '10px 20px 10px 40px',
+    margin: '10px',
+    padding: '30px 15px 30px 15px',
     borderRadius: '15px',
     lineHeight: '30px',
   }

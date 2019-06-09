@@ -53,8 +53,8 @@ const h2Style = {
 
 const aboutStyle = {
   backgroundColor: '#d18b00',
-  padding: '40px 10px 40px 0',
-  marginTop: '20px',
+  padding: '40px 10px 35px 0',
+  marginTop: '45px',
 }
 
 const h2aboutStyle = {

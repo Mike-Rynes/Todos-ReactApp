@@ -16,11 +16,12 @@ function Header() {
   return (
       <header style={headerStyle}>
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 style={h1Style}>Sunshine's To Do App</h1>
+          <h1 style={h1Style}>Melbourne House Movers App</h1>
           <nav style={navStyle}><NavLink exact activeStyle={{ color:'#fff' }} style={ linkStyle } to="/">Todo</NavLink> | <NavLink  exact activeStyle={{ color:'#fff' }} style={linkStyle} to="/about">About</NavLink> | <NavLink  exact activeStyle={{ color:'#fff' }} style={linkStyle} to="/Linksusefull">Links</NavLink> | <NavLink  exact activeStyle={{ color:'#fff' }} style={linkStyle} to="/Help">Help</NavLink></nav>
-          <nav style={navAbtnStyle} ><a style={abtnStyle} href="https://sunshineremovals.com.au" aria-label="To Sunshine Removals Official Wesite">To Sunshine Removals</a></nav>
+          <nav style={navAbtnStyle}><a style={abtnStyle} href="https://sunshineremovals.com.au" aria-label="To Sunshine Removals Official Wesite">To Sunshine Removals</a></nav>
           <nav style={navcontactStyle}><a style={apStyle} href="tel: 0419873224" aria-label="To Smartphone link for Sunshine Removals Victoria">{mobile}</a> <a style={apStyle} href="https://sunshineremovals.com.au/contacts-moving-home/" title="To Contact Us Form">{envelope}</a></nav>
-          <p style={parStyle}>Stop The Head Spin!</p>
+          <p style={parStyle}>Stop The Head Spin!<br/>
+            Add App to Your Home Screen</p>
           <p style={parsocialStyle}><a style={a2pStyle} href="https://www.facebook.com/sunshineremovals1" aria-label="To Sunshine Removals Facebook Page">{facebook}</a> <a style={a2pStyle} href="https://www.youtube.com/channel/UC3Xg_s4HkI58U3CopSiQx3A" aria-label="To Sunshine Removals YouTube Channel"> {youtube} </a></p>
           <p style={copyrightStyle}>Sunshine Removals &copy; Copyright 2019</p>
       </header>
@@ -31,7 +32,9 @@ const headerStyle = {
   background: '#fd5f00',
   color: '#fff',
   textAlign: 'center',
-  padding: '40px 10px 40px',
+  padding: '40px 10px 10px',
+  // height: 'auto',
+  // marginBottom: '0',
 }
 
 const navStyle = {
@@ -46,7 +49,7 @@ const navAbtnStyle = {
 
 const navcontactStyle = {
   color: '#1a1a1a',
-  margin: '40px 13px 0 0',
+  margin: '20px 13px 0 0',
   wordSpacing:'20px',
 }
 
@@ -68,6 +71,7 @@ const abtnStyle = {
   color: '#fff',
   textDecoration: 'none',
   fontWeight: 'bold',
+  fontSize: '18px',
   borderRadius: '20px',
   padding: '10px 40px',
 }
@@ -80,13 +84,14 @@ const apStyle = {
 const parStyle = {
   fontSize: '20px',
   color: '#000',
-  margin: '20px 0',
+  margin: '15px 0 20px',
   fontWeight: 'bolder',
 }
 
 const parsocialStyle = {
   fontSize: '30px',
   marginLeft: '-5px',
+  marginTop: '-5px',
   wordSpacing: '15px',
 }
 
@@ -97,9 +102,11 @@ const a2pStyle = {
 }
 
 const copyrightStyle = {
+  position: 'relative',
+  top: '0px',
   fontSize: '13px',
   color: '#000',
-  margin: '20px 0 -25px',
+  marginTop: '10px',
 }
 
 export default Header; 

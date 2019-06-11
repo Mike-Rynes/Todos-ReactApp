@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+// import Footer from './layout/Footer';
 // import {  } from 'path';
 
 export class TodoItem extends Component {
@@ -19,6 +20,7 @@ export class TodoItem extends Component {
   render() {
     const {id, title } = this.props.todo;
     return (
+      <React.Fragment>
       <div style={this.getStyle()}>
         <p>
           <input type="checkbox" onChange={this.props.markComplete.bind(this, id)}/> {' '}
@@ -27,6 +29,10 @@ export class TodoItem extends Component {
         </p>
         <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>X</button>
       </div>
+      {/* <React.Fragment>
+        <Footer />
+      </React.Fragment> */}
+      </React.Fragment>
     )
   }
 }

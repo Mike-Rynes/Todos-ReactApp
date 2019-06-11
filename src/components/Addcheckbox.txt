@@ -1,0 +1,66 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+class Addcheckbox extends Component  {
+    state = {
+        checkbox: [
+          {
+            id: 1,
+            title: 'Check If Completed',
+            completed: true
+          },
+          {
+            id: 2,
+            title: 'Materials and Stuff',
+            completed: false
+          },
+          {
+            id: 3,
+            title: 'Boxes and or Bags',
+            completed: false
+          },
+          {
+            id: 4,
+            title: 'Tape, Scissors and Marker',
+            completed: false
+          },
+          {
+            id: 5,
+            title: 'Butchers Paper and Bubblewrap',
+            completed: false
+          },
+          {
+            id: 6,
+            title: 'Filler for boxes',
+            completed: false
+          },
+          {
+            id: 7,
+            title: 'Tools for Bed Frames',
+            completed: false
+          }
+        ]
+    }
+}
+// Toggle Complete
+checkComplete = (id) => {
+    this.setState({ checkbox: this.state.checkbox.map(chbox => {
+      if(chbox.id === id) {
+        chbox.completed = !chbox.completed
+      }
+      return chbox;
+    }) })
+  }
+render() {
+  return (
+    <React.Fragment>
+    <p className="containerCheckbox">
+        <input type="checkbox" onChange={this.props.checkComplete.bind(this, id)}/> {' '} { title }
+        <span className="checkmark"></span>
+    </p>
+    </React.Fragment>
+    )
+}
+Addcheckbox.propTypes = {
+    Addcheckbox: PropTypes.func.isRequired
+  };
+export default Addcheckbox;

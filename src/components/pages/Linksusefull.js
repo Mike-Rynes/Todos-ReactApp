@@ -1,12 +1,14 @@
 import React from 'react';
 import Footer from '../layout/Footer';
+import HouseLightsOn from './removals-app-house.jpg';
 
 function Linksusefull() {
   return (
     <div>
       <React.Fragment>
-        <h1 style={h1tStyle}>Some Top Links.</h1>
-        <p style={pStyle} ><strong>Just a little extra as we know it can get hectic.</strong></p>
+        <h2 style={h2tStyle}>Some Top Links.</h2>
+        <p style={pStyle} ><strong>Just a little extra as we know it can get hectic. Organize Power, mail, internet, schools and get the lights on right here for your conernience.</strong></p>
+        <img style={imghouseStyle} src={HouseLightsOn} alt="House after moving in with Lights on" />
         <div style={divlinkstStyle}>
           <ul style={ullistStyle}>
             <li>TELCOS
@@ -64,15 +66,20 @@ const divlinkstStyle = {
   fontWeight: 'bold',
 }
 
-const h1tStyle = {
+const h2tStyle = {
   margin: '30px 10px 0 20px',
-  color: '#fd5f00',
+  color: '#d18b00',
 }
 
 const pStyle = {
   marginTop: '20px',
   marginLeft: '20px',
   marginRight: '20px',
+}
+const imghouseStyle = {
+  width: '100%',
+  height: 'auto',
+  marginTop: '20px',
 }
 
 const ullistStyle = {
